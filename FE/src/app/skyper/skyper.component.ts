@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 interface IPost {
-  titulek: string;
-  text: string;
+  Jmeno: string;
+  Popis: string;
+  Schopnosti: string;
 }
 
 @Component({
@@ -11,10 +12,13 @@ interface IPost {
   styleUrls: ['./skyper.component.css']
 })
 export class SkyperComponent implements OnInit {
-  titulek = '';
-  text = '';
+  Jmeno = '';
+
+  Popis = '';
+  Schopnosti = '';
+
   posty: IPost[] = [];
-  edity: IPost = {titulek : '', text: ''};
+  edity: IPost = {Jmeno : '', Popis: '', Schopnosti: ''};
 
   constructor() { }
 
@@ -22,7 +26,7 @@ export class SkyperComponent implements OnInit {
   }
 
   send(): void {
-    this.posty.push({titulek : this.titulek, text : this.text});
+    this.posty.push({Jmeno : this.Jmeno, Popis : this.Popis, Schopnosti: this.Schopnosti});
   }
 
   edit(pos: IPost): void {
