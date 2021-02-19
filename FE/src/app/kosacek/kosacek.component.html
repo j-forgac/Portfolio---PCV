@@ -1,2 +1,35 @@
-<p>kosacek works!</p>
+<div class="ram">
+  <form (ngSubmit)="send()">
+    <label>
+      <h1>titulek</h1>
+      <input type="text" [(ngModel)]="titulek" name="title" placeholder="Text">
+    </label>
+    <label>
+      <h1>text</h1>
+      <input type="text" [(ngModel)]="text" name="text" placeholder="Title">
+    </label>
+    <button>Pridat</button>
+  </form>
+
+  <form>
+    <h1>Editujete : {{posty.indexOf(edity) + 1}} </h1>
+    <label>
+      <h1>titulek</h1>
+      <input type="text" [(ngModel)]="edity.titulek" name="title" [defaultValue]='edity.titulek'/>
+    </label>
+    <label>
+      <h1>text</h1>
+      <input type="text" [(ngModel)]="edity.text" name="text" [defaultValue]='edity.text'/>
+    </label>
+  </form>
+
+  <div *ngFor="let post of posty" class="vypis" (click)="edit(post)">
+    <h2>
+      {{post.titulek}}
+    </h2>
+    <p>
+      {{post.text}}
+    </p>
+  </div>
+</div>
 <router-outlet></router-outlet>
