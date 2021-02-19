@@ -5,14 +5,21 @@ import {Ng2SearchPipeModule} from 'ng2-search-filter';
 
 import {AppComponent} from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { TestComponent } from './test/test.component';
+import { KosacekComponent } from './kosacek/kosacek.component';
+import { JankoComponent } from './janko/janko.component';
+import { SkyperComponent } from './skyper/skyper.component';
+import { HomeComponent } from './home/home.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    KosacekComponent,
+    JankoComponent,
+    SkyperComponent,
+    HomeComponent,
+
   ],
   imports: [
     BrowserModule,
