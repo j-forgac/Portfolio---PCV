@@ -44,3 +44,27 @@ lide
 hry
 O nás
 
+Milestones
+týden:
+FE:
+Homepage - Mikoláš
+Portfolio uživatele - editovatelné - Janko
+Vyhledávání - Láďa
+
+BE
+Ukládání portfolia
+
+Zjistit jak propojit BE a FE (JSON)
+
+týden:
+	Log in, sign up
+Udělat ukládání portfolia na disk
+
+
+
+
+Budoucnost
+Web server
+Deployment
+
+
