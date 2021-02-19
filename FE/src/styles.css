@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+#navbar {
+  display: flex;
+  margin: 0px 60px;
+  padding: 0;
+}
+
+#navbar li {
+  display: inline;
+  padding: 8px 10px;
+  background: #c9c9c9;
+  font-size: 20px;
+}
