@@ -5,6 +5,8 @@ import { KosacekComponent } from './kosacek/kosacek.component';
 import { JankoComponent } from './janko/janko.component';
 import { SkyperComponent } from './skyper/skyper.component';
 import { HomeComponent } from './home/home.component';
+import { VyhledavaniComponent } from './vyhledavani/vyhledavani.component';
+
 
 
 const routes: Routes = [
@@ -12,6 +14,7 @@ const routes: Routes = [
   {path: 'Kosacek', component: KosacekComponent},
   {path: 'Janko', component: JankoComponent},
   {path: 'Skyper', component: SkyperComponent},
+  {path: 'Vyhledavani', component: VyhledavaniComponent},
 ];
 
 @NgModule({

@@ -1,0 +1,20 @@
+<div class="telo">
+  <div class="row">
+    <div class="vyhledavani">
+      <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Vyhledávání">
+    </div>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Vyhledávač</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let alpha of components | filter:searchText">
+        <td>{{alpha.name}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<router-outlet></router-outlet>

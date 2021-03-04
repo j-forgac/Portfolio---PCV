@@ -9,6 +9,7 @@ import { KosacekComponent } from './kosacek/kosacek.component';
 import { JankoComponent } from './janko/janko.component';
 import { SkyperComponent } from './skyper/skyper.component';
 import { HomeComponent } from './home/home.component';
+import { VyhledavaniComponent } from './vyhledavani/vyhledavani.component';
 
 
 
@@ -19,6 +20,7 @@ import { HomeComponent } from './home/home.component';
     JankoComponent,
     SkyperComponent,
     HomeComponent,
+    VyhledavaniComponent,
 
   ],
   imports: [
