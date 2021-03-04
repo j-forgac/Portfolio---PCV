@@ -11,23 +11,23 @@ import java.util.ArrayList;
 
 public class ShipManager {
 
-    ArrayList<ship> dock = new ArrayList<ship>();
+    ArrayList<ship> postArray = new ArrayList<ship>();
     
     public void putship(ship ship) {
-        ship.setId(dock.size() + 1);
-        dock.add(ship);
+        ship.setId(postArray.size() + 1);
+        postArray.add(ship);
     }
 
     public ArrayList<ship> getships() {
-        return dock;
+        return postArray;
     }
 
     public ship getSpecificship(int id) {
 
-        return(dock.get(id));
+        return(postArray.get(id));
     }
 
     public void Scrap(int removeid) {
-        dock.remove(removeid - 1);
+        postArray.remove(removeid - 1);
     }
 }
