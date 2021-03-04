@@ -15,6 +15,8 @@ chrome-profiler-events*.json
 speed-measure-plugin*.json
 
 # IDEs and editors
+BE/.idea
+FE/.idea
 /.idea
 .project
 .classpath
@@ -44,3 +46,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+FE/src/app/header/header.component.css.map
