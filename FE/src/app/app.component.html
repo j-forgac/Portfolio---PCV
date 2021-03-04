@@ -2,33 +2,31 @@
 </head>
 
 <body>
-<ul id="navbar_list">
-  <li class="navbar_st"><a style="visibility: hidden">||||</a></li>
-  <li routerLink="Home"><a>Home</a></li>
-  <li routerLink="Kosacek"><a>Kosacek</a></li>
-  <li routerLink="Skyper"><a>Skyper</a></li>
-  <li routerLink="Janko"><a>Janko</a></li>
-  <li class="navbar_mid"><a>...</a></li>
-  <li> <!-- Search form -->
-    <div class="telo">
-      <div class="row">
-        <div class="vyhledavani">
-          <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Vyhledávání">
-        </div>
-        <table class="table table-striped">
-          <thead>
-          <tr>
-            <th>Vyhledávač</th>
-          </tr>
-          </thead>
-        </table>
-      </div>
-    </div>
-  </li>
-  <li class="navbar_en"><a>|</a></li>
-</ul>
-<tr *ngFor="let alpha of components | filter:searchText">
-  <td>{{alpha.name}}</td>
-</tr>
+<div id="navbar">
+  <ul id="navbar_list">
+    <li class="navbar_st"><a style="visibility: hidden">||||</a></li>
+    <li routerLink="Home"><a>Home</a></li>
+    <li routerLink="Kosacek"><a>Kosacek</a></li>
+    <li routerLink="Skyper"><a>Skyper</a></li>
+    <li routerLink="Janko"><a>Janko</a></li>
+    <li class="navbar_mid"><a>...</a></li>
+    <li><input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Hledat..." style="box-shadow: none"></li>
+    <li class="navbar_en"><a>|</a></li>
+  </ul>
+</div>
+
+<br>
+<br>
+
+<div id="clearfix">
+  <br>
+  <h2>"Vyhledávání"</h2>
+  <hr>
+
+  <div *ngFor="let alpha of components | filter:searchText">
+    <p>{{alpha.name}}</p>
+  </div>
+</div>
+
 </body>
 <router-outlet></router-outlet>
