@@ -10,15 +10,25 @@
   <li routerLink="Janko"><a>Janko</a></li>
   <li class="navbar_mid"><a>...</a></li>
   <li> <!-- Search form -->
-    <div class="md-form">
-      <input type="search" [(ngModel)]="searchText" placeholder="Search text">
-      <button mdbBtn gradient="aqua" rounded="true" mdbWavesEffect type="submit">Search</button>
+    <div class="telo">
+      <div class="row">
+        <div class="vyhledavani">
+          <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Vyhledávání">
+        </div>
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th>Vyhledávač</th>
+          </tr>
+          </thead>
+        </table>
+      </div>
     </div>
   </li>
   <li class="navbar_en"><a>|</a></li>
 </ul>
-<ul *ngFor="let data of dataset | filter: searchText">
-  <li>{{data}}</li>
-</ul>
+<tr *ngFor="let alpha of components | filter:searchText">
+  <td>{{alpha.name}}</td>
+</tr>
 </body>
 <router-outlet></router-outlet>

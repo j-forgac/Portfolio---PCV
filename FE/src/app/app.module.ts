@@ -9,7 +9,6 @@ import {KosacekComponent} from './kosacek/kosacek.component';
 import {JankoComponent} from './janko/janko.component';
 import {SkyperComponent} from './skyper/skyper.component';
 import {HomeComponent} from './home/home.component';
-import { FilterPipe } from './filter.pipe';
 
 
 @NgModule({
@@ -19,7 +18,6 @@ import { FilterPipe } from './filter.pipe';
     JankoComponent,
     SkyperComponent,
     HomeComponent,
-    FilterPipe,
   ],
   imports: [
     BrowserModule,

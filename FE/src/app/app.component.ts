@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FE';
-  dataset = ['Home', 'Skyper', 'Kosacek', 'Janko'];
-  searchText
+  searchText;
+  components = [
+    { name: 'app.component'},
+    { name: 'second-page'},
+    { name: 'third-page'},
+    { name: 'fourth-page'},
+    { name: 'fifth-page'},
+    { name: 'blogpost'}
+  ];
 }
