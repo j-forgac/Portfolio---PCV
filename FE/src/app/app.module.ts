@@ -4,13 +4,12 @@ import {FormsModule} from '@angular/forms';
 import {Ng2SearchPipeModule} from 'ng2-search-filter';
 
 import {AppComponent} from './app.component';
-import { AppRoutingModule } from './app-routing.module';
-import { KosacekComponent } from './kosacek/kosacek.component';
-import { JankoComponent } from './janko/janko.component';
-import { SkyperComponent } from './skyper/skyper.component';
-import { HomeComponent } from './home/home.component';
-import { VyhledavaniComponent } from './vyhledavani/vyhledavani.component';
-
+import {AppRoutingModule} from './app-routing.module';
+import {KosacekComponent} from './kosacek/kosacek.component';
+import {JankoComponent} from './janko/janko.component';
+import {SkyperComponent} from './skyper/skyper.component';
+import {HomeComponent} from './home/home.component';
+import { FilterPipe } from './filter.pipe';
 
 
 @NgModule({
@@ -20,8 +19,7 @@ import { VyhledavaniComponent } from './vyhledavani/vyhledavani.component';
     JankoComponent,
     SkyperComponent,
     HomeComponent,
-    VyhledavaniComponent,
-
+    FilterPipe,
   ],
   imports: [
     BrowserModule,

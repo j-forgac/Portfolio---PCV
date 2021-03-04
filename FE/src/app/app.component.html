@@ -11,12 +11,14 @@
   <li class="navbar_mid"><a>...</a></li>
   <li> <!-- Search form -->
     <form class="form-inline md-form mr-auto mb-4">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search text" aria-label="Search" [(ngModel)]="searchText">
       <button mdbBtn type="button" gradient="aqua" rounded="true" mdbWavesEffect type="submit">Search</button>
     </form>
   </li>
   <li class="navbar_en"><a>|</a></li>
-
+</ul>
+<ul *ngFor="let data of dataset | filter: searchText">
+  <li>{{data}}</li>
 </ul>
 </body>
 <router-outlet></router-outlet>
