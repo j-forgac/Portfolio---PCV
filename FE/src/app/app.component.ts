@@ -8,12 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'FE';
   searchText;
-  components = [
-    { name: 'app.component'},
-    { name: 'second-page'},
-    { name: 'third-page'},
-    { name: 'fourth-page'},
-    { name: 'fifth-page'},
-    { name: 'blogpost'}
-  ];
+  public menu = {
+    '/' : 'Home',
+    kosacek: 'Kosacek',
+    janko: 'Janko',
+    skyper : 'Skyper',
+  };
 }
