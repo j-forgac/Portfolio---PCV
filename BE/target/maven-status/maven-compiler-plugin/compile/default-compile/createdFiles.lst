@@ -1,4 +1,4 @@
-cz\educanet\Manager\ShipManager.class
-cz\educanet\Resources\ApiConfig.class
-cz\educanet\Resources\ShipResources.class
-cz\educanet\Resources\Ship.class
+cz\forgac\zoo\MujKonfig.class
+cz\forgac\zoo\resources\UsersResource.class
+cz\forgac\zoo\entities\animalEntity.class
+cz\forgac\zoo\managers\mujManager.class
