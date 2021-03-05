@@ -4,7 +4,7 @@
   <li *ngFor="let item of menu | keyvalue">
     <a routerLink="/{{item.key}}">{{item.value}}</a>
   </li>
-  <li class="navbar_mid"><a>...</a></li>
+  <li class="navbar_mid"><a style="display: none">...</a></li>
   <li>
     <form style="margin: 0px 20px" autocomplete="off">
       <input list="components" name="browser" id="browser" placeholder="Enter Keyword" (change)="print('ahoj')">

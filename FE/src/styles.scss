@@ -23,7 +23,7 @@
   padding: 0px 10px;
 }
 
-#navbar_list li :hover:not(input):not(button) {
+#navbar_list li :hover:not(input):not(button):not(form) {
   background: #ba4e4e;
   color: #ffffff;
   padding: 8px 10px;
@@ -95,10 +95,6 @@
 #clearfix h2 {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-}
-
-#clearfix hr {
-  margin: 0px 20px;
 }
 
 #clearfix p {
