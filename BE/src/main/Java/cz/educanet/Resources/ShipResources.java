@@ -24,13 +24,13 @@ public class ShipResources {
 
     @GET
     @Path("get-specific")
-    public Response getSpecific(@PathParam("id") int id) {
-        return Response.ok(Hamburg.getSpecificship(id)).build();
+    public Response getSpecific(@QueryParam("id") int id) {
+        return Response.ok(Hamburg.getSpecificship(id-1)).build();
     }
 
     @POST
     @Path("create")
-    public Response create(ship ship) {
+    public Response create(Ship ship) {
         Hamburg.putship(ship);
         return Response.ok(ship).build();
     }
@@ -38,7 +38,7 @@ public class ShipResources {
     @DELETE
     @Path("scrap")
     public Response scrap(@QueryParam("id") int removeid) {
-        Hamburg.Scrap(removeid);
+        Hamburg.Scrap(removeid-1);
         return Response.ok().build();
     }
 }
