@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Zoo" />
         <module name="zoo" />
+        <module name="BE" />
       </profile>
     </annotationProcessing>
   </component>
