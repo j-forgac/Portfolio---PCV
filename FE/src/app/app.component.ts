@@ -10,8 +10,6 @@ export class AppComponent {
   searchText;
   public menu = {
     '/' : 'Home',
-    kosacek: 'Kosacek',
-    janko: 'Janko',
-    skyper : 'Skyper',
+    uzivatele: 'uzivatele',
   };
 }
