@@ -9,7 +9,7 @@ interface IPost {
 @Component({
   selector: 'app-janko',
   templateUrl: './janko.component.html',
-  styleUrls: ['./janko.component.css']
+  styleUrls: ['./janko.component.scss']
 })
 export class JankoComponent implements OnInit {
   Jmeno = '';

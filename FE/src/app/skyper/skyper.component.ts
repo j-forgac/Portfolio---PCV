@@ -9,7 +9,7 @@ interface IPost {
 @Component({
   selector: 'app-skyper',
   templateUrl: './skyper.component.html',
-  styleUrls: ['./skyper.component.css']
+  styleUrls: ['./skyper.component.scss']
 })
 export class SkyperComponent implements OnInit {
   Jmeno = '';

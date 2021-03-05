@@ -9,7 +9,7 @@ interface IPost {
 @Component({
   selector: 'app-kosacek',
   templateUrl: './kosacek.component.html',
-  styleUrls: ['./kosacek.component.css']
+  styleUrls: ['./kosacek.component.scss']
 })
 export class KosacekComponent implements OnInit {
   Jmeno = '';
