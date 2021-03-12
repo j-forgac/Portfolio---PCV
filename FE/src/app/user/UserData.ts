@@ -23,9 +23,9 @@ export class UserData{
     this.skills.delete(itsId);
   }*/
 
-  text: string;
+  text: string[] = [];
 
-  constructor(text: string) {
+  constructor(text: string[]) {
     this.text = text;
   }
 }

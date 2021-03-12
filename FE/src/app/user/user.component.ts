@@ -10,8 +10,10 @@ export class UserComponent implements OnInit {
 
   myMap: Map<number, string> = new Map();
   text = '';
+  text2;
   isEditing = false;
-  userData: UserData[] = [];
+  userData: string[] = [];
+  userExperience: string[] = [];
 
   constructor() {
     /*this.myMap = new Map();*/
@@ -23,9 +25,9 @@ export class UserComponent implements OnInit {
 
   addUserData(): void{
     this.isEditing = !this.isEditing;
-    this.userData.push(new UserData(this.text));
     console.log(this.text);
-    console.log(this.userData);
+    this.userData = this.text.split('\n');
+    this.userExperience = this.text2.split('\n');
   }
 
 }
