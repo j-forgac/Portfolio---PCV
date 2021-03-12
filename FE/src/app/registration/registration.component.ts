@@ -1,9 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {UserService} from '../user.service';
 
-interface IPost {
-  username: string;
-}
+
 
 @Component({
   selector: 'app-registration',
