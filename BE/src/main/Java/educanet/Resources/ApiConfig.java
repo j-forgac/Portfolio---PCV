@@ -1,8 +1,9 @@
-package cz.forgac.zoo;
+package educanet.Resources;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 @ApplicationPath("api")
-public class MujKonfig extends Application{
+public class ApiConfig extends Application {
+
 }
