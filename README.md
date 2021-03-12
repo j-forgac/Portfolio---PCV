@@ -18,4 +18,5 @@ FE:
 **Stage 3**
 
 * Komunikace BE a FE - Láďa
+Posílání a příjmání http komunikace u registrace a u post editu
 * Ukládání obsahu portfolia a uživatelů na BE - Janko
