@@ -18,4 +18,4 @@ FE:
 **Stage 3**
 
 * Komunikace BE a FE - Láďa
-* Ukládání na BE - Janko
+* Ukládání obsahu portfolia a uživatelů na BE - Janko
