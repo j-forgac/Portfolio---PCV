@@ -17,5 +17,6 @@ přidávání uživatelů
 dočasné ukládání
 
 Stage 3
+
 Komunikace BE a FE
 ukládání na BE
