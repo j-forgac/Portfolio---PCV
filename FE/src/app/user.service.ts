@@ -9,14 +9,23 @@ export class UserService {
 
   constructor(private httpClient: HttpClient) {
   }
+  HttpPostRegistrace(username: string, heslo: string, name: string, popis: string, skills: string): Observable<any> {
+    return this.httpClient.post('http://127.0.0.1:8080/BE/api/users/create', {
+      username,
+      heslo,
+      name,
+      popis,
+      skills
+    });
+  }
   HttpPostPozadavek(UzivatelskeJmeno: string, Heslo: string): Observable<any> {
-    return this.httpClient.post('https://webhook.site/0aa0de63-5ae3-4ea8-9b0b-e93fb542cadc', {
+    return this.httpClient.post('https://webhook.site/1d0c240c-a30f-48db-a2b8-06b39fec64ee', {
       UzivatelskeJmeno,
       Heslo
     });
   }
   HttpGetPozadavek(UzivatelskeJmeno: string, Heslo: string): Observable<any> {
-    return this.httpClient.post('https://webhook.site/0aa0de63-5ae3-4ea8-9b0b-e93fb542cadc', {
+    return this.httpClient.post('https://webhook.site/1d0c240c-a30f-48db-a2b8-06b39fec64ee', {
       UzivatelskeJmeno,
       Heslo
     });
