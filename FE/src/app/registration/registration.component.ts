@@ -20,7 +20,7 @@ export class RegistrationComponent {
   }
 
   VytvoritUzivatele(): void {
-    this.apiService.HttpGetPozadavek(this.UzivatelskeJmeno, this.Heslo).subscribe(() => {
+    this.apiService.HttpPostPozadavek(this.UzivatelskeJmeno, this.Heslo).subscribe(() => {
       this.Prijmuto = true;
     });
   }
