@@ -25,4 +25,14 @@ FE:
    * PUT - upráví údaje v položce
    * POST - vytvoří účet
    * DELETE - smaže uživatele
+**Stage 4**
 
+* Komunikace BE a FE - Láďa
+  * Posílání a příjmání http komunikace u registrace a u post editu
+* Ukládání obsahu portfolia a uživatelů na BE - Mikoláš
+  * CRUD operace
+   * GET - pošle údaje (zobrazí obsah všech položek uživatele)
+   * PUT - upráví údaje v položce
+   * POST - vytvoří účet
+   * DELETE - smaže uživatele
+* Oprava gitignorů - Janko
