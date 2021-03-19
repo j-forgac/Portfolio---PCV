@@ -36,3 +36,4 @@ FE:
    * POST - vytvoří účet
    * DELETE - smaže uživatele
 * Oprava gitignorů - Mikoláš
+* FE styles - Janko
