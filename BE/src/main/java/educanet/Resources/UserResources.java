@@ -24,7 +24,7 @@ public class UserResources {
     @GET
     @Path("get-specific")
     public Response getSpecific(@QueryParam("id") int id) {
-        return Response.ok(Users.getspecificuser(id-1)).build();
+        return Response.ok(Users.getspecificuser(id)).build();
     }
 
     @POST
@@ -37,7 +37,7 @@ public class UserResources {
     @DELETE
     @Path("delete")
     public Response delete(@QueryParam("id") int removeid) {
-        Users.delete(removeid-1);
+        Users.delete(removeid);
         return Response.ok().build();
     }
 }
