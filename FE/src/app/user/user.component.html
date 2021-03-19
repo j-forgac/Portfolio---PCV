@@ -8,8 +8,9 @@
             {{info}}
           </li>
         </ul>
-        <label class="input-sizer stacked" *ngIf="isEditing" >
-          <textarea class="text_box" [(ngModel)]="text" oninput="this.parentNode.dataset.value = this.value" rows="1" ></textarea>
+        <label class="input-sizer stacked" *ngIf="isEditing">
+          <textarea class="text_box" [(ngModel)]="text" oninput="this.parentNode.dataset.value = this.value"
+                    rows="1"></textarea>
         </label>
       </div>
       <div class="experience">
@@ -19,23 +20,27 @@
             {{info2}}
           </li>
         </ul>
-        <textarea *ngIf="isEditing" [(ngModel)]="text2"></textarea>
+        <label class="input-sizer stacked" *ngIf="isEditing">
+          <textarea class="text_box" [(ngModel)]="text2" oninput="this.parentNode.dataset.value = this.value"
+                    rows="1"></textarea>
+        </label>
       </div>
       <div class="skills">
         <div class="main-text">Skills</div>
-        <div class ="zkusenosti">
-          <div *ngFor="let info of userSkills">{{info}}</div>
-        </div>
-        <textarea *ngIf="isEditing" [(ngModel)]="text3"></textarea>
+        <div *ngFor="let info of userSkills">{{info}}</div>
       </div>
-      <div class="edit">
-        <button *ngIf="isEditing" (click)="addUserData()">SUBMIT</button>
-        <button *ngIf="!isEditing" (click)="this.isEditing = !this.isEditing;">EDIT</button>
-      </div>
+      <label class="input-sizer stacked" *ngIf="isEditing">
+        <textarea class="text_box" [(ngModel)]="text3" oninput="this.parentNode.dataset.value = this.value"
+                  rows="1"></textarea>
+      </label>
     </div>
-    <div class="panel2">
+    <div class="edit">
+      <button *ngIf="isEditing" (click)="addUserData()">SUBMIT</button>
+      <button *ngIf="!isEditing" (click)="this.isEditing = !this.isEditing;">EDIT</button>
+    </div>
+  </div>
+  <div class="panel2">
 
-    </div>
   </div>
 </div>
 
