@@ -10,6 +10,7 @@ export class AppComponent {
   searchText;
   public menu = {
     '/' : 'Home',
-    uzivatele: 'uzivatele',
+    uzivatele: 'Uzivatele',
+    Registrace: 'Registrace',
   };
 }

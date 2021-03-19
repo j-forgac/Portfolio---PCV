@@ -1,4 +1,4 @@
-cz\forgac\zoo\MujKonfig.class
-cz\forgac\zoo\resources\UsersResource.class
-cz\forgac\zoo\managers\MujManager.class
-cz\forgac\zoo\entities\animalEntity.class
+educanet\Resources\ApiConfig.class
+educanet\Resources\User.class
+educanet\Manager\UserManager.class
+educanet\Resources\UserResources.class

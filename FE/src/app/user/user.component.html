@@ -1,1 +1,31 @@
-<p>user works!</p>
+<div class="container">
+  <div class="main-wrapper">
+    <div class="panel1">
+      <div class="about-me">
+        <div class="main-text">About</div>
+        <ul *ngFor="let info of userData">
+          <li *ngIf="!isEditing" >
+            {{info}}
+          </li>
+        </ul>
+        <textarea *ngIf="isEditing" [(ngModel)]="text"></textarea>
+      </div>
+      <div class="experience">
+        <div class="main-text">Experience</div>
+        <ul *ngFor="let info2 of userExperience">
+          <li *ngIf="!isEditing" >
+            {{info2}}
+          </li>
+        </ul>
+        <textarea *ngIf="isEditing" [(ngModel)]="text2"></textarea>
+      </div>
+      <div class="edit">
+        <button *ngIf="isEditing" (click)="addUserData()">SUBMIT</button>
+        <button *ngIf="!isEditing" (click)="this.isEditing = !this.isEditing;">EDIT</button>
+      </div>
+    </div>
+    <div class="panel2">
+      aa
+    </div>
+  </div>
+</div>

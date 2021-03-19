@@ -23,12 +23,6 @@
   padding: 0px 10px;
 }
 
-#navbar_list li :hover:not(input):not(button):not(form) {
-  background: #ba4e4e;
-  color: #ffffff;
-  padding: 8px 10px;
-
-}
 
 #navbar_list .navbar_st :hover {
   border-radius: 10px 0px 0px 10px;
@@ -97,7 +91,54 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+#clearfix hr {
+  margin: 0px 20px;
+}
+
 #clearfix p {
   font-size: 130%;
   font-family: 'Open Sans', sans-serif;
 }
+form {
+  display: block;
+  justify-content: left;
+  flex-direction: column;
+}
+
+input {
+  width: 400px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 25px;
+}
+.ram {
+  background-image: radial-gradient(white,lightblue,blue);
+  width: 500px;
+  height: auto;
+  margin: 50px auto;
+  margin-top: 15%;
+  padding: 1px;
+  border: 2px double black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px black inset;
+}
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
