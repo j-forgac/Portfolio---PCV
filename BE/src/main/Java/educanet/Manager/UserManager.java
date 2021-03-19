@@ -11,23 +11,23 @@ import java.util.ArrayList;
 
 public class UserManager {
 
-    ArrayList<User> Users = new ArrayList<User>();
+    ArrayList<User> Group = new ArrayList<User>();
 
     public void putuser(User User) {
-        User.setId(Users.size() + 1);
-        Users.add(User);
+        User.setId(Group.size() + 1);
+        Group.add(User);
     }
 
     public ArrayList<User> getUsers() {
-        return Users;
+        return Group;
     }
 
     public User getspecificuser(int id) {
 
-        return(Users.get(id));
+        return(Group.get(id));
     }
 
     public void delete(int removeid) {
-        Users.remove(removeid - 1);
+        Group.remove(removeid - 1);
     }
 }
