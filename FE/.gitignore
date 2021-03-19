@@ -48,3 +48,7 @@ testem.log
 Thumbs.db
 
 FE/src/app/header/header.component.css.map
+FE/src/app/registartion/registartion.component.css
+FE/src/app/registartion/registartion.component.css.map
+FE/src/styles.css
+FE/src/styles.css.map

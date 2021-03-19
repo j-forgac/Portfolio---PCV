@@ -56,4 +56,12 @@ button {
   border-radius: 3px;
 }
 
+.zkusenosti div {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0;
+  background-color: #46b8da;
+}
+
 /*# sourceMappingURL=user.component.css.map */
