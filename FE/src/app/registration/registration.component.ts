@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import {UserService} from '../user.service';
 
-
-
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
@@ -11,8 +9,12 @@ import {UserService} from '../user.service';
 export class RegistrationComponent {
   title = 'Register';
 
-  UzivatelskeJmeno = '';
-  Heslo = '';
+  username = '';
+  heslo = '';
+  name = '';
+  popis = '';
+  skills = '';
+
   Prijmuto = false;
 
 
@@ -20,7 +22,7 @@ export class RegistrationComponent {
   }
 
   VytvoritUzivatele(): void {
-    this.apiService.HttpPostPozadavek(this.UzivatelskeJmeno, this.Heslo).subscribe(() => {
+    this.apiService.HttpPostRegistrace(this.username, this.heslo, this.name, this.popis, this.skills).subscribe(() => {
       this.Prijmuto = true;
     });
   }
