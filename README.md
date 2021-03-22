@@ -25,6 +25,7 @@ FE:
    * PUT - upráví údaje v položce
    * POST - vytvoří účet
    * DELETE - smaže uživatele
+   * 
 **Stage 4**
 
 * Komunikace BE a FE - Láďa
