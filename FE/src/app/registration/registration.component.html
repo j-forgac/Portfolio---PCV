@@ -1,7 +1,7 @@
 <div class="container">
   <div class="main-wrapper">
     <form #form="ngForm">
-      <div class="main-text">About</div>
+      <div class="main-text">Registrace</div>
       <div>
         <label for="inputNick">Uživatelské Jméno</label>
         <input name="nickname" [(ngModel)]="username" type="text" required minlength="3" maxlength="10"
@@ -18,7 +18,7 @@
                #HesloEl="ngModel" id="inputPassword" class="form-control"
                placeholder="Password">
       </div>
-      <div *ngIf="HesloEl.touched">
+      <div *ngIf="HesloEl.valueChanges && HesloEl.errors">
         <p *ngIf="HesloEl.errors.minlength">Heslo je moc krátké</p>
         <p *ngIf="HesloEl.errors.maxlength">Heslo je moc dlouhé</p>
       </div>

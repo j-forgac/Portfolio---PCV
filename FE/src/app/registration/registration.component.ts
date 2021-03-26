@@ -26,4 +26,8 @@ export class RegistrationComponent {
       this.Prijmuto = true;
     });
   }
+
+  log(object: Object): void{
+    console.log(object);
+  }
 }

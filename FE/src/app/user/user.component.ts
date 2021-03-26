@@ -9,9 +9,9 @@ import {UserData} from './UserData';
 export class UserComponent implements OnInit {
 
   myMap: Map<number, string> = new Map();
-  text;
-  text2;
-  text3;
+  about = '';
+  experience  = '';
+  skills  = '';
   isEditing = false;
   userData: string[] = [];
   userExperience: string[] = [];
@@ -27,10 +27,10 @@ export class UserComponent implements OnInit {
 
   addUserData(): void{
     this.isEditing = !this.isEditing;
-    console.log(this.text);
-    this.userData = this.text.split('\n');
-    this.userExperience = this.text2.split('\n');
-    this.userSkills = this.text3.split('\n');
+    console.log(this.about);
+    this.userData = this.about.split('\n');
+    this.userExperience = this.experience.split('\n');
+    this.userSkills = this.skills.split('\n');
   }
 
 }
