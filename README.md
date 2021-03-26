@@ -48,12 +48,11 @@ FE:
 
 * Psychická podpora - Fabian
 * Login | Register - Láďa a Mikoláš
-  * přestěhování záložek
-  * Vytvoření loginu
-  * Ověřování loginu
+  * přestěhování záložek - přesun na Search
+  * Vytvoření loginu - login.component
+  * Ověřování loginu - zda je uživatel přihlášený BE
 * profil záložka - Janko
   * Profil přihlášeného uživatele
   * možnost upravit jeho informace
 * testy
   * Jestli vše zatím funguje jak má
-
