@@ -26,6 +26,7 @@ FE:
    * POST - vytvoří účet
    * DELETE - smaže uživatele
 * Homepage layout, remake registrační komponenty, user page - Mikoláš
+
 **Stage 4**
 
 * Komunikace BE a FE - Láďa
@@ -38,3 +39,9 @@ FE:
    * DELETE - smaže uživatele
 * Oprava gitignorů - Mikoláš
 * FE styles - Janko
+
+**Stage 5**
+
+* Login | Register - Láďa a Mikoláš
+* profil záložka - Janko
+* testy
