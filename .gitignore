@@ -10,6 +10,8 @@
 # dependencies
 /node_modules
 /FE/node_modules
+/target
+/BE/target
 
 # profiling files
 chrome-profiler-events*.json
@@ -17,8 +19,6 @@ speed-measure-plugin*.json
 
 # IDEs and editors
 .idea
-/target
-/BE/target
 .project
 .classpath
 .c9/
