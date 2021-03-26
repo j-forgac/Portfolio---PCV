@@ -1,4 +1,8 @@
+posts\Resources\Post.class
+educanet\Resources\UserResources.class
 educanet\Resources\ApiConfig.class
+posts\Resources\ApiConfig.class
+posts\Resources\PostResources.class
 educanet\Resources\User.class
 educanet\Manager\UserManager.class
-educanet\Resources\UserResources.class
+posts\Manager\PostManager.class
