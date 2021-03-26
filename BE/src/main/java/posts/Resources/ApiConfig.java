@@ -1,9 +1,9 @@
-package educanet.Resources;
+package posts.Resources;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
-@ApplicationPath("UserApi")
+@ApplicationPath("PostApi")
 public class ApiConfig extends Application {
 
 }
