@@ -9,11 +9,13 @@ import {UserData} from './UserData';
 export class UserComponent implements OnInit {
 
   myMap: Map<number, string> = new Map();
-  text = '';
+  text;
   text2;
+  text3;
   isEditing = false;
   userData: string[] = [];
   userExperience: string[] = [];
+  userSkills: string[] = [];
 
   constructor() {
     /*this.myMap = new Map();*/
@@ -28,6 +30,7 @@ export class UserComponent implements OnInit {
     console.log(this.text);
     this.userData = this.text.split('\n');
     this.userExperience = this.text2.split('\n');
+    this.userSkills = this.text3.split('\n');
   }
 
 }
