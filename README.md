@@ -4,6 +4,7 @@ Toto je pololetní projekt s FE Angularem a BE JavaEE.
 **Stage 1**
 
 FE:
+* Psychická podpora - Fabian
 * Homepage - Mikoláš - co bude na Homepage?
 * Portfolio uživatele - editovatelné - Janko
 * Vyhledávání - Láďa
@@ -11,12 +12,14 @@ FE:
 
 **Stage 2** 
 
+* Psychická podpora - Fabian
 * Dočasné ukládání portfolia - Janko
 * načítání portfolia
 * přidávání uživatelů
 
 **Stage 3**
 
+* Psychická podpora - Fabian
 * Komunikace BE a FE - Láďa
   * Posílání a příjmání http komunikace u registrace a u post editu
 * Ukládání obsahu portfolia a uživatelů na BE - Janko
@@ -29,6 +32,7 @@ FE:
 
 **Stage 4**
 
+* Psychická podpora - Fabian
 * Komunikace BE a FE - Láďa
   * Posílání a příjmání http komunikace u registrace a u post editu
 * Ukládání obsahu portfolia a uživatelů na BE - Janko
@@ -42,6 +46,8 @@ FE:
 
 **Stage 5**
 
+* Psychická podpora - Fabian
 * Login | Register - Láďa a Mikoláš
 * profil záložka - Janko
 * testy
+
