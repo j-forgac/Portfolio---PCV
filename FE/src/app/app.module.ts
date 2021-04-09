@@ -10,6 +10,7 @@ import {HomeComponent} from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { UserComponent } from './user/user.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { RegistrationComponent } from './registration/registration.component';
     HeaderComponent,
     UserComponent,
     RegistrationComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
