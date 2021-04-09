@@ -11,7 +11,6 @@ export class UserService {
   }
   HttpPostRegistrace(username: string, heslo: string, name: string, popis: string, skills: string): Observable<any> {
     return this.httpClient.post('http://127.0.0.1:8080/BE/UserApi/users/create', {
- master
       username,
       heslo,
       name,
@@ -19,7 +18,7 @@ export class UserService {
       skills
     });
   }
-  HttpPostPozadavek(UzivatelskeJmeno: string, Heslo: string): Observable<any> {
+  HttpPostAPozadavek(UzivatelskeJmeno: string, Heslo: string): Observable<any> {
     return this.httpClient.post('', {
       UzivatelskeJmeno,
       Heslo

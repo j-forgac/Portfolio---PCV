@@ -22,7 +22,7 @@ export class RegistrationComponent {
   }
 
   VytvoritUzivatele(): void {
-    this.apiService.registrace(this.username, this.heslo, this.name, this.popis, this.skills).subscribe(() => {
+    this.apiService.HttpPostRegistrace(this.username, this.heslo, this.name, this.popis, this.skills).subscribe(() => {
       this.Prijmuto = true;
     });
   }
