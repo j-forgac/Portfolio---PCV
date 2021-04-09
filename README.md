@@ -56,3 +56,12 @@ FE:
   * možnost upravit jeho informace
 * testy
   * Jestli vše zatím funguje jak má
+
+**Stage 6**
+* Move projektu na jednotlivé repa
+* Login a register - Mikoláš + Láďa help
+
+* Backend pochutina a ghetování dat z BE (profily) - Janko
+
+* Fabián bude psychicky podporovat (asi)
+* 
